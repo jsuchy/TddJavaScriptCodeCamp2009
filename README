@@ -1,0 +1,9 @@
+Code Camp Chicago - TDD and JavaScript
+
+This repo contains:
+
+slides/TddAndJavaScript.pdf => the slides from the presentation
+code/* => the code written during the presentation
+
+The testing framework developed during the presentation can be found at http://github.com/jsuchy/JsSimpleUnit/tree/master.  
+This framework will have limited development by the author, but feel free to fork and play around with it.

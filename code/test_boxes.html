@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Test boxes</title>
+    <link href="JsSimpleUnit.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="script/JsSimpleUnit.js"></script>
+    <script type="text/javascript" src="script/boxes.js"></script>
+  </head>
+  <body>
+  <h2>Boxes Test Suite</h2>
+  </body>
+  
+  <script type="text/javascript">
+    // box 1-3
+    test({
+      initialColorIsGreen: function() {
+        test.assertEquals(boxes.color, "green");
+      },
+      changesColorFromGreen: function() {
+        boxes.color = "green";
+        var element = document.createElement("div");
+        
+        boxes.changeColor(element);
+        
+        test.assertEquals(element.style.backgroundColor, "red");
+      },
+      changesColorFromRed: function() {
+        boxes.color = "red";
+        var element = document.createElement("div");
+
+        boxes.changeColor(element);
+
+        test.assertEquals(element.style.backgroundColor, "green");
+      },
+    });
+  </script>
+</html>
